@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { CheckIcon, MinusIcon } from '@heroicons/react/20/solid'
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Head from 'next/head';
 
 interface Feature {
     name: string;
@@ -81,6 +82,11 @@ function classNames(...classes: string[]) {
 export default function Example() {
   return (
     <>
+        <Head>
+            <title>GetYourSEO</title>
+            {/* Add your favicon link here, if not already included in _document.js */}
+            {/* <link rel="icon" href="/favicon.ico" /> */}
+        </Head>
         <Navbar />
         <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
