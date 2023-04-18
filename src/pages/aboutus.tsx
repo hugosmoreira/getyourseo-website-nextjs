@@ -1,12 +1,15 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ContatForm from '@/components/ContactForm'
+import Cta from '@/components/Cta'
 
 const aboutus = () => {
   return (
     <div>
       <Navbar />
-      <h1>About Us</h1>
+      <Cta />
+      <ContatForm />
       <Footer />
     </div>
   )
